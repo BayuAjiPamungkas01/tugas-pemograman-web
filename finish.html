@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portofolio Cah Mumet</title>
+  <link rel="stylesheet" href="finish.css" />
+</head>
+<body>
+  <div class="container">
+
+    <!-- Navbar -->
+    <header class="navbar">
+      <div class="logo"><span>Portofo</span>lio</div>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#skills">Skill</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="hero-text">
+        <p>Hello, My Name Is</p>
+        <h1>Cah <span>Mumet</span> 513</h1>
+        <h3>I'm a Network Engineer</h3>
+        <a href="#about" class="btn">More About Me</a>
+      </div>
+      <div class="hero-img">
+        <img src="f8a77a53-93a9-4a7f-bb81-023f1a1d8e8b.jpg" alt="f8a77a53-93a9-4a7f-bb81-023f1a1d8e8b.jpg" />
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+      <div class="about-img">
+        <img src="65a5905a-aa08-47cc-b478-3e105a4ef00b.jpg" alt="65a5905a-aa08-47cc-b478-3e105a4ef00b.jpg" />
+      </div>
+      <div class="about-text">
+        <h2>About <span>Me</span></h2>
+        <h4>Network Engineer </h4>
+        <p>
+          "Saya adalah seorang network engineer yang berdedikasi dengan pengalaman 3 tahun dalam merancang, mengimplementasikan, dan memelihara infrastruktur jaringan yang aman dan efisien. Saya memiliki pemahaman mendalam tentang protokol jaringan, perangkat keras, dan praktik keamanan terbaik."  
+          <br> <br>
+        </p>
+        <a href="#contact" class="btn">Contact Me</a>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+      <h2><span>S</span>ervices</h2>
+      <div class="card-group">
+        <div class="card">
+          <h3>Desain dan Implementasi Jaringan</h3>
+          <p>Perencanaan topologi jaringan sesuai kebutuhan bisnis.
+            <br> <br>
+            Konfigurasi perangkat jaringan (router, switch, firewall).
+            <br> <br>
+            Implementasi jaringan kabel dan nirkabel (Wi-Fi).
+            <br> <br>
+            Instalasi dan konfigurasi perangkat keras jaringan.
+            <br> <br>
+            Manajemen dan Pemeliharaan Jaringan.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Keamanan Jaringan</h3>
+          <p>Konfigurasi dan manajemen firewall.
+            <br> <br>
+            Implementasi Virtual Private Network (VPN) untuk koneksi aman.
+            <br> <br>
+            Pengaturan Intrusion Detection and Prevention Systems (IDPS).
+          </p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+      <h2><span>Sk</span>ills</h2>
+      <div class="skill-boxes">
+        <div class="skill-card">
+          <h3>Protokol Jaringan</h3>
+          <label>TCP/IP</label><div class="bar tcpip"></div>
+          <label>DNS</label><div class="bar dns"></div>
+          <label>DHCP</label><div class="bar dhcp"></div>
+          <label>HTTP/HTTPS</label><div class="bar http"></div>
+        </div>
+        <div class="skill-card">
+          <h3>Perangkat Jaringan</h3>
+          <label>Router</label><div class="bar router"></div>
+          <label>Switch </label><div class="bar switch"></div>
+          <label>Firewall</label><div class="bar firewall"></div>
+          <label>Wireless Access Point </label><div class="bar wireless"></div>
+        </div>
+        <div class="skill-card">
+          <h3>Keamanan Jaringan</h3>
+          <label>Firewalling</label><div class="bar firewalling"></div>
+          <label>VPN </label><div class="bar vpn"></div>
+          <label>Network Segmentation</label><div class="bar network"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+      <h2>Contact <span>Me</span></h2>
+      <div class="info">
+        <p><strong>Address:</strong> Jebres, Surakarta, Jawa Tengah</p>
+        <p><strong>Email:</strong> bayuajipamungkas@gmail.com</p>
+        <p><strong>Telp:</strong> (57126) 089602616606</p>
+        <p><strong>Hp:</strong> +62 896 0261 6606</p>
+      </div>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.0502451395137!2d110.84726337787129!3d-7.569501455258795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a165844552131%3A0xd73a1c111208fd3c!2sSPBU%20Pucang%20Sawit!5e0!3m2!1sen!2sid!4v1746157777606!5m2!1sen!2sid" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <footer>
+        <p>Bayu Aji Pamungkas @Mengare IT</p> 
+        <p>Copyright © Bayu Aji Pamungkas</p>
+      </footer>
+    </section>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const bars = document.querySelectorAll('.bar');
+    
+        const observer = new IntersectionObserver((entries, observer) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              const bar = entry.target;
+              const classes = bar.className.split(' ');
+              classes.forEach(cls => {
+                if (cls !== 'bar') {
+                  bar.classList.add('animate', cls);
+                }
+              });
+              observer.unobserve(bar); // animasi hanya sekali
+            }
+          });
+        }, { threshold: 0.5 });
+    
+        bars.forEach(bar => {
+          observer.observe(bar);
+        });
+      });
+    </script>
+    
+  </div>
+</body>
+</html>
